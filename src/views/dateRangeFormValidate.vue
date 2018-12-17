@@ -3,8 +3,13 @@
         <el-form-item label="活动时间" required>
             <el-col :span="11">
                 <el-form-item prop="date1">
-                    <el-date-picker type="daterange" placeholder="选择日期" v-model="ruleForm.date1"
-                                    style="width: 100%" @change="date1Change"> </el-date-picker>
+                    <el-date-picker
+                        type="daterange"
+                        placeholder="选择日期"
+                        v-model="ruleForm.date1"
+                        :default-value="ruleForm.date1"
+                        style="width: 100%"
+                        @change="date1Change"> </el-date-picker>
                 </el-form-item>
             </el-col>
         </el-form-item>
@@ -20,7 +25,9 @@ export default {
     data () {
         return {
             ruleForm: {
-                date1: []
+                // daterange日期，没表单验证提示(1.4.13版本，值为undefined，才会有表单验证提示)
+                date1: undefined
+                // date1: ['2018-12-06', '2019-01-22']
             },
             rules: {
                 date1: [
