@@ -11,8 +11,9 @@
             @current-change="handleCurrentChange"
             :current-page="pageNo"
             :page-size="pageSize"
-            layout="prev, pager, next, jumper"
-            :total="tableData.length">
+            :total="tableData.length"
+            layout="total, prev, pager, next, jumper"
+            >
         </el-pagination>
     </div>
 </template>
