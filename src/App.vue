@@ -6,6 +6,8 @@
             <router-link to="/about">About</router-link>
             |
             <router-link to="/form_validate">form_validate</router-link>
+            |
+            <router-link to="/frontend_pagination">前端分页</router-link>
         </div>
         <router-view/>
     </div>

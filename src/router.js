@@ -24,6 +24,10 @@ export default new Router({
         {
             path: '/form_validate',
             component: () => import('./views/dateRangeFormValidate.vue')
+        },
+        {
+            path: '/frontend_pagination',
+            component: () => import('./views/FrontendPagination.vue')
         }
     ]
 })
