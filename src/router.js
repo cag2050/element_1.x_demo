@@ -28,6 +28,10 @@ export default new Router({
         {
             path: '/frontend_pagination',
             component: () => import('./views/FrontendPagination.vue')
+        },
+        {
+            path: '/collapse_demo',
+            component: () => import('./views/CollapseDemo.vue')
         }
     ]
 })
