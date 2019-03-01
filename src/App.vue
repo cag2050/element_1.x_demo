@@ -10,6 +10,8 @@
             <router-link to="/frontend_pagination">前端分页</router-link>
             |
             <router-link to="/collapse_demo">Collapse 折叠面板（flex布局）</router-link>
+            |
+            <router-link to="/dialog_demo">el-dialog 例子</router-link>
         </div>
         <router-view/>
     </div>

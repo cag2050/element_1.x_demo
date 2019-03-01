@@ -32,6 +32,10 @@ export default new Router({
         {
             path: '/collapse_demo',
             component: () => import('./views/CollapseDemo.vue')
+        },
+        {
+            path: '/dialog_demo',
+            component: () => import('./views/DialogDemo.vue')
         }
     ]
 })
