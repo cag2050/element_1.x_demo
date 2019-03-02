@@ -1,10 +1,11 @@
 <template>
     <div>
-        <img src="../assets/logo.png" @click="dialogVisible = true">
+        <div style="height: 500px;"></div>
+        <img src="../assets/logo.png" @click="handleClick">
         <el-dialog
             title=""
             :visible.sync="dialogVisible"
-            size="tiny"
+            size="small"
             :show-close="false"
         >
             <span>这是一段信息</span>
@@ -21,7 +22,18 @@ export default {
         }
     },
     methods: {
-
+        handleClick () {
+            this.dialogVisible = true
+            let scrollTop = 0
+            if (document.documentElement && document.documentElement.scrollTop) {
+                scrollTop = document.documentElement.scrollTop
+            } else if (document.body) {
+                scrollTop = document.body.scrollTop
+            }
+            console.log(scrollTop)
+            // window.scrollTo(0, scrollTop)
+            window.scrollTo(0, scrollTop - 50)
+        }
     }
 }
 </script>
