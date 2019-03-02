@@ -14,6 +14,8 @@
             <router-link to="/dialog_demo">el-dialog 例子</router-link>
             |
             <router-link to="/checkbox_demo">el-checkbox 例子</router-link>
+            |
+            <router-link to="/object_undefined">对象的 undefined 属性，显示问题</router-link>
         </div>
         <router-view/>
     </div>

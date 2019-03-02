@@ -40,6 +40,10 @@ export default new Router({
         {
             path: '/checkbox_demo',
             component: () => import('./views/CheckboxDemo.vue')
+        },
+        {
+            path: '/object_undefined',
+            component: () => import('./views/ObjectUndefinedDemo.vue')
         }
     ]
 })
