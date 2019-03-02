@@ -13,7 +13,8 @@
 export default {
     data () {
         return {
-            isAddBlacklist: '1'
+            // 绑定值类型，需要是：数字
+            isAddBlacklist: 1
         }
     },
     methods: {
