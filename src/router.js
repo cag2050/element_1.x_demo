@@ -36,6 +36,10 @@ export default new Router({
         {
             path: '/dialog_demo',
             component: () => import('./views/DialogDemo.vue')
+        },
+        {
+            path: '/checkbox_demo',
+            component: () => import('./views/CheckboxDemo.vue')
         }
     ]
 })

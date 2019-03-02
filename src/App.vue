@@ -12,6 +12,8 @@
             <router-link to="/collapse_demo">Collapse 折叠面板（flex布局）</router-link>
             |
             <router-link to="/dialog_demo">el-dialog 例子</router-link>
+            |
+            <router-link to="/checkbox_demo">el-checkbox 例子</router-link>
         </div>
         <router-view/>
     </div>
