@@ -44,6 +44,10 @@ export default new Router({
         {
             path: '/object_undefined',
             component: () => import('./views/ObjectUndefinedDemo.vue')
+        },
+        {
+            path: '/message_box',
+            component: () => import('./views/MessageBoxDemo.vue')
         }
     ]
 })
